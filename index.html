@@ -1,8 +1,40 @@
 <!DOCTYPE html>
+<html lang="en-us">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Working with the div element</title>
+      <style>
+.item {
+   border: 1px solid black;
+   margin: 12px;
+}
+
+.item a {
+   text-decoration: none;
+}
+
+[lang="en-us"] .price::before {
+   content: "$";
+}
+
+[lang="en-uk"] .price::before {
+   content: "£";
+}
+      </style>
    </head>
    <body>
+      <h1>Crayons</h1>
+      <div class="item">
+         <h2><a href="https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_aps_sr_pg1_2?ie=UTF8&adId=A0016035LJLUJS057GK6&url=https%3A%2F%2Fwww.amazon.com%2FCrayola-Twistables-Crayons-Amazon-50Count%2Fdp%2FB07D4T2XKB%2Fref%3Dsr_1_2_sspa%3Fie%3DUTF8%26qid%3D1538525683%26sr%3D8-2-spons%26keywords%3Dcrayons%26psc%3D1&qualifier=1538525685&id=7827313213122623&widgetName=sp_atf">Crayola Mini Twistables Crayons, Amazon for Kids, 50Count</a></h2>
+         <img src="img/6195yUcheEL._AC_US218_.jpg" alt="[Single pack of crayons]">
+         <p class="price">10.99</p>
+      </div>
+
+      <div class="item">
+         <h2><a href="https://www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_aps_sr_pg1_1?ie=UTF8&adId=A08097312IRRZ1DFFQABK&url=https%3A%2F%2Fwww.amazon.com%2FCrayola-24-Count-Crayons-6-Pack%2Fdp%2FB00LK0NFMY%2Fref%3Dsr_1_1_sspa%3Fie%3DUTF8%26qid%3D1538526337%26sr%3D8-1-spons%26keywords%3Dcrayons%26psc%3D1&qualifier=1538526336&id=2492582333910544&widgetName=sp_atf">Crayola 24 Count Crayons (6-Pack)</a></h2>
+         <img src="img/512Tel-5z1L._AC_US218_.jpg" alt="[24 count crayons]">
+         <p class="price">10.00</p>
+      </div>
    </body>
 </html>
